@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        #banner {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #4caf50, #81c784);
+            color: white;
+            text-align: center;
+        }
+
+        #banner h1 {
+            font-size: 3rem;
+        }
+
+        .container-content {
+            max-width: 1200px;
+            width: 100%;
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .proyecto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header class="bg-dark text-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-content d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#banner">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacion">Formación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="banner" class="section">
+    <div>
+        <h1>Nelson Jhon</h1>
+        <p>Desarrollador Backend en Java y Spring Boot</p>
+    </div>
+</div>
+
+<div id="proyectos" class="section py-5">
+    <div class="container-content">
+        <h2 class="mb-4">Mis Proyectos</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="img/quantic-games-login.png" class="card-img-top" alt="Quantic games">
+                    <div class="card-body">
+                        <h3 class="card-title">Quantic Games</h3>
+                        <p class="card-text">Descripción breve del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h3 class="card-title">App-Calculadora-Subredes</h3>
+                        <p class="card-text">Aplicación para cálculos de subredes usando algoritmos eficientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h3 class="card-title">App-Quantic-Games</h3>
+                        <p class="card-text">Sistema de tienda para venta de productos de videojuegos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="info" class="section py-5 bg-light">
+    <div class="container-content">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador apasionado por crear soluciones eficientes y escalables. Estos son algunos de mis conocimientos:</p>
+        <ul>
+            <li>Java (POO, Swing, JDBC)</li>
+            <li>C# (Unity)</li>
+            <li>PHP, HTML, CSS, JavaScript</li>
+            <li>MySQL, SQL Server</li>
+            <li>Spring Boot (básico)</li>
+            <li>Control de versiones con GIT</li>
+            <li>Desarrollo de videojuegos en Unity</li>
+        </ul>
+    </div>
+</div>
+<div id="formacion" class="section py-5">
+    <div class="container-content">
+        <h2 class="mb-4">Formación Académica</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/utp-logo.png" class="card-img-top mx-auto" style="width: 50%;" alt="Logo UTP">
+                    <div class="card-body">
+                        <h3 class="card-title">Ingeniería de Software - UTP</h3>
+                        <p class="card-text">En curso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/udemy-logo.png" class="card-img-top mx-auto" style="width: 50%;" alt="Logo Udemy">
+                    <div class="card-body">
+                        <h3 class="card-title">Máster Completo en Java de cero a experto 2023</h3>
+                        <p class="card-text">En curso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/udemy-logo.png" class="card-img-top mx-auto" style="width: 50%;" alt="Logo Udemy">
+                    <div class="card-body">
+                        <h3 class="card-title">Spring Framework 6 & Spring Boot 3 desde cero a experto</h3>
+                        <p class="card-text">En curso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contacto" class="section py-5">
+    <div class="container-content">
+        <h2>Contacto</h2>
+        <p>Nombre completo: Nelson Jhon Gil Pari</p>
+        <p>Email: nelsonjhongp@gmail.com</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Nelson Jhon Gil Pari. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
