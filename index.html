@@ -59,6 +59,10 @@
             margin-left: auto;
         }
 
+        .bold {
+            font-weight: bold;
+        }
+
         #formacion .card-img-top {
             width: 100%; /* Ajusta el ancho al 100% del contenedor */
             height: 150px; /* Define un alto fijo */
@@ -108,44 +112,116 @@
         </div>
     </div>
 </div>
+
+<div id="descripcion" class="section py-5 bg-light">
+    <div class="container-content text-center">
+        <h2 class="mb-4 bold">Sobre mí</h2>
+        <p>
+            Actualmente estoy cursando el 9no ciclo de Ingeniería de Software, donde he adquirido sólidos conocimientos en desarrollo de aplicaciones, bases de datos y programación orientada a objetos. Mi pasión por resolver problemas tecnológicos y optimizar procesos me ha llevado a crear proyectos que reflejan mi capacidad para aprender rápidamente y adaptarme a nuevos retos.
+
+Creo en el poder de la colaboración y la tecnología para crear soluciones que marquen la diferencia. Si buscas a alguien con entusiasmo, creatividad y una base técnica sólida para contribuir a tu equipo, estaré encantado de ser parte del cambio.
+        </p>
+        <div class="mt-4">
+            <a href="https://github.com/nelsonjhongp" target="_blank" class="btn btn-dark me-2">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nelsonjhongp" target="_blank" class="btn btn-primary me-2">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="cv.pdf" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-file-alt"></i> CV
+            </a>
+        </div>
+    </div>
+</div>
+
 <div id="proyectos" class="section py-5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <div id="conocimientos" class="section py-5">
-        <div class="container-content text-center">
-            <h2>Conocimientos</h2>
-            <div class="row text-center">
-                <div class="col-3">
-                    <i class="fab fa-java fa-3x"></i>
-                    <p>Java</p>
+        <div class="container-content">
+            <h2 class="mb-4 text-center bold">Conocimientos</h2>
+            <div class="row align-items-center">
+                <!-- Lado izquierdo: Texto -->
+                <div class="col-md-6">
+                    <p>
+                        A lo largo de mis proyectos, he utilizado diversas tecnologías y lenguajes de programación
+                        para abordar problemas complejos y construir aplicaciones eficientes. Algunos de los lenguajes
+                        y herramientas que he dominado incluyen:
+                    </p>
+                    <ul>
+                        <li>Lenguajes de programación: Java, JavaScript, PHP</li>
+                        <li>Frameworks: Spring Boot, Bootstrap</li>
+                        <li>Bases de datos: MySQL, SQL Server</li>
+                        <li>Herramientas: Git, GitHub</li>
+                        <li>Desarrollo de videojuegos con Unity</li>
+                    </ul>
                 </div>
-                <div class="col-3">
-                    <i class="fab fa-js-square fa-3x"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="col-3">
-                    <i class="fab fa-php fa-3x"></i>
-                    <p>PHP</p>
-                </div>
-                <div class="col-3">
-                    <i class="fas fa-database fa-3x"></i>
-                    <p>MySQL</p>
+                <!-- Lado derecho: Íconos -->
+                <div class="col-md-6">
+                    <div class="row text-center">
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-java fa-4x text-warning"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-js-square fa-4x text-warning"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-php fa-4x text-primary"></i>
+                            <p>PHP</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fas fa-database fa-4x text-info"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-git-alt fa-4x text-danger"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-bootstrap fa-4x text-purple"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fab fa-unity fa-4x text-dark"></i>
+                            <p>Unity</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fas fa-server fa-4x text-secondary"></i>
+                            <p>SQL Server</p>
+                        </div>
+                        <div class="col-4 mb-4">
+                            <i class="fas fa-code fa-4x text-success"></i>
+                            <p>Spring Boot</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-content">
-        <h2 class="mb-4">Mis Proyectos</h2>
+        <h2 class="mb-4 bold">Mis Proyectos</h2>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
                 <div class="card">
                     <img src="img\proyectos\quantic-games-1.png" class="card-img-top" alt="Quantic games">
                     <div class="card-body">
-                        <h3 class="card-title">Quantic Games</h3>
-                        <p class="card-text">Descripción breve del proyecto.</p>
+                        <h3 class="card-title">App-Quantic-Games</h3>
+                        <p class="card-text">Sistema de tienda para venta de productos de videojuegos</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
+                <div class="card">
+                    <img src="img\proyectos\app-servitec-1.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h3 class="card-title">App-Servitec</h3>
+                        <p class="card-text">Sistema de tienda para venta de productos de videojuegos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
                 <div class="card">
                     <img src="img\proyectos\Calculadora-Subredes-1.png" class="card-img-top" alt="Proyecto 2">
                     <div class="card-body">
@@ -154,33 +230,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
                 <div class="card">
-                    <img src="proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                    <img src="img\proyectos\web-utphone-1.png" class="card-img-top" alt="Proyecto 4">
                     <div class="card-body">
-                        <h3 class="card-title">App-Quantic-Games</h3>
-                        <p class="card-text">Sistema de tienda para venta de productos de videojuegos.</p>
+                        <h3 class="card-title">Utphone</h3>
+                        <p class="card-text">Pagina web utphone desarrollado con java y springboot.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div id="info" class="section py-5 bg-light">
-    <div class="container-content">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador apasionado por crear soluciones eficientes y escalables. Estos son algunos de mis conocimientos:</p>
-        <ul>
-            <li>Java (POO, Swing, JDBC)</li>
-            <li>C# (Unity)</li>
-            <li>PHP, HTML, CSS, JavaScript</li>
-            <li>MySQL, SQL Server</li>
-            <li>Spring Boot (básico)</li>
-            <li>Control de versiones con GIT</li>
-            <li>Desarrollo de videojuegos en Unity</li>
-        </ul>
-    </div>
+    </div>    
 </div>
 <div id="formacion" class="section py-5">
     <div class="container-content">
