@@ -3,86 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio - Nelson Jhon</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Poppins', sans-serif;
-        }
+    <link rel="icon" type="image/x-icon" href="img\logos\nj-icon.png">
+    <link rel="stylesheet" href="css\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
 
-        #banner {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .wallparer {
-            background: url('img/imagen-fondo.jpg') no-repeat center/cover;
-        }
-
-        #banner h1 {
-            font-size: 3rem;
-        }
-
-        .container-content {
-            max-width: 1200px;
-            width: 100%;
-            padding-right: var(--bs-gutter-x,.75rem);
-            padding-left: var(--bs-gutter-x,.75rem);
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .proyecto img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-
-        #formacion .card-img-top {
-            width: 100%; /* Ajusta el ancho al 100% del contenedor */
-            height: 150px; /* Define un alto fijo */
-            object-fit: contain; /* Ajusta las imágenes dentro del contenedor sin recortarlas */
-            padding: 10px; /* Espaciado interno para las imágenes */
-        }
-
-    </style>
+    <!-- Metaetiquetas Open Graph -->
+    <meta property="og:title" content="Mi Portafolio - Nelson Jhon Gil Pari">
+    <meta property="og:description" content="Bienvenido a mi portafolio. Soy un desarrollador de software especializado en Java y Spring Boot.">
+    <meta property="og:image" content="https://nelsonjhongp.github.io/my-portfolio/img/imagen-fondo.jpg">
+    <meta property="og:url" content="nelsonjhongp.github.io/my-portfolio/">
+    <meta property="og:type" content="website">
 </head>
 <body>
 
 <header class="bg-dark text-white fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-content d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#banner">Inicio</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#banner">
+                <img src="img\logos\nj-logo.png" alt="Logo" style="height: 30px;" class="align-middle">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#conocimientos">Conocimientos</a>
                     </li>
@@ -90,21 +42,19 @@
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#info">Sobre mí</a>
+                        <a class="nav-link" href="#formacion">Formacion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacion">Formación</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>    
 </header>
 
-<div id="banner" class="section wallparer">
+<div id="about" class="section" style="background: url('img/imagen-fondo.jpg') no-repeat center/cover;">
     <div id="banner" class="section">
         <div>
             <h1>Nelson Jhon</h1>
@@ -113,7 +63,7 @@
     </div>
 </div>
 
-<div id="descripcion" class="section py-5 bg-light">
+<div id="sobre-mi" class="section py-5 bg-light">
     <div class="container-content text-center">
         <h2 class="mb-4 bold">Sobre mí</h2>
         <p>
@@ -134,77 +84,76 @@ Creo en el poder de la colaboración y la tecnología para crear soluciones que 
         </div>
     </div>
 </div>
-
-<div id="proyectos" class="section py-5">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <div id="conocimientos" class="section py-5">
-        <div class="container-content">
-            <h2 class="mb-4 text-center bold">Conocimientos</h2>
-            <div class="row align-items-center">
-                <!-- Lado izquierdo: Texto -->
-                <div class="col-md-6">
-                    <p>
-                        A lo largo de mis proyectos, he utilizado diversas tecnologías y lenguajes de programación
-                        para abordar problemas complejos y construir aplicaciones eficientes. Algunos de los lenguajes
-                        y herramientas que he dominado incluyen:
-                    </p>
-                    <ul>
-                        <li>Lenguajes de programación: Java, JavaScript, PHP</li>
-                        <li>Frameworks: Spring Boot, Bootstrap</li>
-                        <li>Bases de datos: MySQL, SQL Server</li>
-                        <li>Herramientas: Git, GitHub</li>
-                        <li>Desarrollo de videojuegos con Unity</li>
-                    </ul>
-                </div>
-                <!-- Lado derecho: Íconos -->
-                <div class="col-md-6">
-                    <div class="row text-center">
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-java fa-4x text-warning"></i>
-                            <p>Java</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-js-square fa-4x text-warning"></i>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-php fa-4x text-primary"></i>
-                            <p>PHP</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <img src="img/logos/mysql.png" alt="MySQL" class="fa-4x" style="width: 60px; height: 60px;">
-                            <p>MySQL</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-git-alt fa-4x text-danger"></i>
-                            <p>Git</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-bootstrap fa-4x text-purple"></i>
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fab fa-unity fa-4x text-dark"></i>
-                            <p>Unity</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <img src="img/logos/sqlserver.png" alt="SQLserver" class="fa-4x" style="width: 60px; height: 60px;">
-                            <p>SQL Server</p>
-                        </div>
-                        <div class="col-4 mb-4">
-                            <i class="fas fa-leaf fa-4x text-success"></i>
-                            <p>Spring Boot</p>
-                        </div>
+<div id="conocimientos" class="section py-5">
+    <div class="container-content">
+        <h2 class="mb-4 text-center bold">Conocimientos</h2>
+        <div class="row align-items-center">
+            <!-- Lado izquierdo: Texto -->
+            <div class="col-md-6">
+                <p>
+                    A lo largo de mis proyectos, he utilizado diversas tecnologías y lenguajes de programación
+                    para abordar problemas complejos y construir aplicaciones eficientes. Algunos de los lenguajes
+                    y herramientas que he dominado incluyen:
+                </p>
+                <ul>
+                    <li>Lenguajes de programación: Java, JavaScript, PHP</li>
+                    <li>Frameworks: Spring Boot, Bootstrap</li>
+                    <li>Bases de datos: MySQL, SQL Server</li>
+                    <li>Herramientas: Git, GitHub</li>
+                    <li>Desarrollo de videojuegos con Unity</li>
+                </ul>
+            </div>
+            <!-- Lado derecho: Íconos -->
+            <div class="col-md-6">
+                <div class="row text-center">
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-java fa-4x text-warning"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-js-square fa-4x text-warning"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-php fa-4x text-primary"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <img src="img/logos/mysql.png" alt="MySQL" class="fa-4x" style="width: 60px; height: 60px;">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-git-alt fa-4x text-danger"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-bootstrap fa-4x text-purple"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fab fa-unity fa-4x text-dark"></i>
+                        <p>Unity</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <img src="img/logos/sqlserver.png" alt="SQLserver" class="fa-4x" style="width: 60px; height: 60px;">
+                        <p>SQL Server</p>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <i class="fas fa-leaf fa-4x text-success"></i>
+                        <p>Spring Boot</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div id="proyectos" class="section py-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <div class="container-content">
-        <h2 class="mb-4 bold">Mis Proyectos</h2>
+        <h2 class="mb-4 bold text-center">Mis Proyectos</h2>
         <div class="row g-4">
             <div class="col-md-6 col-lg-6">
-                <div class="card">
+                <div class="card card-shadow">
                     <div id="carouselUtphone" class="carousel slide" data-bs-ride="carousel">
                         <a href="https://github.com/nelsonjhongp/web-utphone-app" target="_blank">
                             <div class="carousel-inner">
@@ -450,11 +399,17 @@ Creo en el poder de la colaboración y la tecnología para crear soluciones que 
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <div class="text-center mt-5">
+        <a href="devgames.html" class="btn btn-outline-dark">
+            <i class="fa-solid fa-gamepad fa-lg me-2"></i>
+            Otros Proyectos
+        </a>
+    </div>
 </div>
 <div id="formacion" class="section py-5">
     <div class="container-content">
-        <h2 class="mb-4">Formación Académica</h2>
+        <h2 class="mb-4 bold text-center">Formación Académica</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card text-center">
@@ -486,9 +441,9 @@ Creo en el poder de la colaboración y la tecnología para crear soluciones que 
         </div>
     </div>
 </div>
-<div id="contacto" class="section py-5">
+<div id="contacto" class="section py-5 py-5 bg-light">
     <div class="container-content">
-        <h2 class="mb-4">Contacto</h2>
+        <h2 class="mb-4 bold">Contacto</h2>
         <p class="mb-3">Si tienes alguna pregunta o quieres comunicarte conmigo, por favor llena el formulario a continuación:</p>
         <form id="contactForm" class="row g-3 needs-validation" novalidate>
             <div class="col-md-6">
@@ -520,9 +475,9 @@ Creo en el poder de la colaboración y la tecnología para crear soluciones que 
 </div>
 <script src="js/form-validation.js"></script>
 <footer>
-    <p>&copy; 2025 Nelson Jhon Gil Pari. Todos los derechos reservados.</p>
+    <p>&copy; <span id="current-year"></span> Nelson Jhon Gil Pari. Todos los derechos reservados.</p>
 </footer>
-
+<script src="js\get-year"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
